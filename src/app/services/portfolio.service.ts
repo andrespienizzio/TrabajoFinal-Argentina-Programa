@@ -10,7 +10,7 @@ export class PortfolioService {
   constructor(private http:HttpClient) { }
 
   obtainData() {
-    console.log("El servicio portfolio esta corriendo")
+    return this.http.get('json')
 }
 
 }
