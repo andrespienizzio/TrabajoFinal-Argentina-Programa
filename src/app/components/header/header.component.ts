@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   constructor(private obtainData:PortfolioService) { }
 
   ngOnInit(): void {
-    this.obtainData.obtainData()
+    this.obtainData.obtainData().subscribe(data =>{console.log(data)});
   }
 
 }
